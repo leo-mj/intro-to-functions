@@ -8,7 +8,7 @@ You may assume that there are always at least two strings in the list.
 function longestInList(words) {
     let longest = words[0];
     for (let word of words) {
-        if (word.length > longest) {
+        if (word.length > longest.length) {
             longest = word;
         }
     }
@@ -17,6 +17,6 @@ function longestInList(words) {
 
 // test cases:
 
-console.log("longestInList(["England", "Wales", "Scotland", "Northern Ireland"])", longestInList(["England", "Wales", "Scotland", "Northern Ireland"]), "should be "Northern Ireland"")
-console.log("longestInList(["the", "quick", "brown", "fox"])",longestInList(["the", "quick", "brown", "fox"]), "should be "quick")
-console.log("longestInList(["hello", "hi", "greetings", "hey"])",longestInList(["hello", "hi", "greetings", "hey"]), "should be "greetings"")
+console.log('longestInList(["England", "Wales", "Scotland", "Northern Ireland"])', longestInList(["England", "Wales", "Scotland", "Northern Ireland"]), 'should be "Northern Ireland"');
+console.log('longestInList(["the", "quick", "brown", "fox"])',longestInList(["the", "quick", "brown", "fox"]), 'should be "quick"');
+console.log('longestInList(["hello", "hi", "greetings", "hey"])',longestInList(["hello", "hi", "greetings", "hey"]), 'should be "greetings"');
