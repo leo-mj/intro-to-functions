@@ -4,6 +4,11 @@ When there are multiple string which are tied for largest character count, retur
 You may assume that each string in the list is a single word.
 You may assume that there are always at least two strings in the list.
 */
+/**
+ * Given a list of strings, returns the string which has the greatest character count (including duplicates).
+ * @param {array of strings} words - list of strings  
+ * @returns {string} - longest string in words
+ */
 
 function longestInList(words) {
     let longest = words[0];
