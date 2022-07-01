@@ -6,7 +6,12 @@ The censor must scrub out matches that are case insensitive.
 You may assume that each string in the list is a lowercase single word.
 You may assume that there is no punctuation apart from spaces in the full message.
 */
-
+/**
+ * Given a full message and a list of words, returns a single string that represents a 'censored' version of the original message.
+ * @param {string} message - message to censor
+ * @param {array of strings} banList - list of words to censor
+ * @returns {string} - censored message
+ */
 function censorMessage(message, banList) {
     let rawWords = message.split(" ");
     let scrubbedWords = [];
